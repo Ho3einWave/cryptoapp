@@ -1,0 +1,63 @@
+.card {
+  background: #2d2d30;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+}
+
+.identifier {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.identifier h3 {
+  margin-left: 0.5rem;
+}
+
+.identifier img {
+  width: 32px;
+  height: 32px;
+}
+
+.date {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  color: rgb(202, 202, 202);
+}
+
+.change {
+  margin-top: 0.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.current-price {
+  text-align: right;
+}
+
+.bi-caret-down-fill {
+  color: #f03e3e;
+}
+
+.red {
+  color: #f03e3e;
+}
+
+.bi-caret-up-fill {
+  color: #2f9e44;
+}
+
+.green {
+  color: #2f9e44;
+}
+
+.change-icon {
+  margin-left: 0.5rem;
+}
