@@ -38,13 +38,13 @@ body {
   border-radius: 0.5rem;
   padding: 0 1rem;
   background: #2d2d30;
-  color: rgba(99, 88, 238, 1);
+  color: #6358ee;
   border: none;
   margin-bottom: 2rem;
 }
 
 .search::placeholder {
-  color: rgb(87, 81, 172);
+  color: #5751ac;
 }
 
 .search:active,
