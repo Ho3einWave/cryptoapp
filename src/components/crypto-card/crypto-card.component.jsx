@@ -26,9 +26,9 @@ export const CryptoCard = ({ currency }) => {
         </div>
         <div className="change-icon">
           {currency.chg24h.startsWith("-") ? (
-            <i class="bi bi-caret-down-fill"></i>
+            <i className="bi bi-caret-down-fill"></i>
           ) : (
-            <i class="bi bi-caret-up-fill"></i>
+            <i className="bi bi-caret-up-fill"></i>
           )}
         </div>
       </div>

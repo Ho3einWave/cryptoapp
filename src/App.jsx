@@ -7,6 +7,7 @@ class App extends Component {
     super();
     this.state = {
       data: {},
+      searchField: "",
     };
   }
 
@@ -16,11 +17,25 @@ class App extends Component {
       .then((data) => this.setState({ data: data.data }));
   }
 
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value });
+  };
+
   render() {
+    const { data, searchField } = this.state;
+    const filteredData = data.MarketBest?.data.filter((crypto) => {
+      return crypto.name.toLowerCase().includes(searchField.toLowerCase());
+    });
     return (
       <div className="App">
         <h1 className="title">Crypto App</h1>
-        {this.state.data.MarketBest?.data.map((currency) => {
+        <input
+          className="search"
+          type="search"
+          placeholder="Search Crypto"
+          onChange={this.handleChange}
+        />
+        {filteredData?.map((currency) => {
           return <CryptoCard currency={currency} key={currency.id} />;
         })}
       </div>

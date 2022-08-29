@@ -31,3 +31,23 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.search {
+  width: 19rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  background: #2d2d30;
+  color: rgba(99, 88, 238, 1);
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.search::placeholder {
+  color: rgb(87, 81, 172);
+}
+
+.search:active,
+.search:focus {
+  outline: none;
+}
