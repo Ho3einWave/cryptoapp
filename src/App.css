@@ -32,12 +32,18 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.subtitle {
+  font-weight: 100;
+}
+
 .search {
   width: 19rem;
   height: 3rem;
   border-radius: 0.5rem;
   padding: 0 1rem;
-  background: #2d2d30;
+  border-radius: 17px;
+  background: #1e1e1e;
+  box-shadow: 7px 7px 13px #181818, -7px -7px 13px #242424;
   color: #6358ee;
   border: none;
   margin-bottom: 2rem;

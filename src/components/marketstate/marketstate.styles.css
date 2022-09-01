@@ -1,0 +1,15 @@
+.market-state {
+  margin: 2rem;
+  border-radius: 17px;
+  background: #1e1e1e;
+  box-shadow: 7px 7px 13px #181818, -7px -7px 13px #242424;
+  width: 20rem;
+  padding: 1.5rem 0.5rem;
+  font-size: 0.8rem;
+}
+.state {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
