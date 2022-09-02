@@ -8,11 +8,11 @@ export const MarketState = ({ marketState }) => {
   return (
     <div className="market-state">
       <div className="state">
-        <span>Market Capital</span>
+        <span>Market Capital ($)</span>
         <span> {totalMarketCap ? MoneyFormater(totalMarketCap) : 0}</span>
       </div>
       <div className="state">
-        <span>Trade Value in 24H</span>
+        <span>Trade Value in 24H ($)</span>
         <span>{totalVol24H ? MoneyFormater(totalVol24H) : 0}</span>
       </div>
       <div className="state">

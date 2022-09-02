@@ -2,6 +2,7 @@ import "./App.css";
 import { Component } from "react";
 import { NavBar } from "./components/nav-bar/nav-bar.component";
 import { HomePage } from "./pages/homepage/homepage.component";
+import { About } from "./pages/about/about.component";
 import { Route } from "react-router-dom";
 
 class App extends Component {
@@ -44,6 +45,7 @@ class App extends Component {
             handleChange={this.handleChange}
           />
         </Route>
+        <Route path="/about" component={About} />
       </div>
     );
   }
