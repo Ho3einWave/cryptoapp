@@ -1,0 +1,39 @@
+.currency {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ow-title {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.overview {
+  margin: 2rem;
+  border-radius: 17px;
+  background: #1e1e1e;
+  box-shadow: 7px 7px 13px #181818, -7px -7px 13px #242424;
+  width: 20rem;
+  padding: 1.5rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.today-price {
+  margin-bottom: 2rem;
+  width: 20rem;
+  padding: 0 1rem;
+}
+
+.today-price h4 {
+  font-weight: 300;
+  color: #6358ee;
+}
+
+.today-price .price-details {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}

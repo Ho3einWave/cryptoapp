@@ -2,8 +2,9 @@ import "./App.css";
 import { Component } from "react";
 import { NavBar } from "./components/nav-bar/nav-bar.component";
 import { HomePage } from "./pages/homepage/homepage.component";
+import { Currency } from "./pages/currency/currency.component";
 import { About } from "./pages/about/about.component";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 class App extends Component {
   constructor() {
@@ -38,14 +39,17 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <Route exact path="/">
-          <HomePage
-            marketState={this.state.marketState}
-            filteredData={filteredData}
-            handleChange={this.handleChange}
-          />
-        </Route>
-        <Route path="/about" component={About} />
+        <Switch>
+          <Route exact path="/">
+            <HomePage
+              marketState={this.state.marketState}
+              filteredData={filteredData}
+              handleChange={this.handleChange}
+            />
+          </Route>
+          <Route path="/about" component={About} />
+          <Route path="/currency/:id" component={Currency} />
+        </Switch>
       </div>
     );
   }

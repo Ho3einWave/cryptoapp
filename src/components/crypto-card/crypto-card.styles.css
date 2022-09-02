@@ -10,6 +10,7 @@
   background: #1e1e1e;
   box-shadow: 5px 5px 10px #181818, -5px -5px 10px #242424;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .card:hover {

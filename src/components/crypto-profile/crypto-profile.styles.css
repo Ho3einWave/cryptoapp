@@ -1,0 +1,30 @@
+.cc {
+  width: 18rem;
+  margin-top: 2rem;
+  border-radius: 15px;
+  background: #1e1e1e;
+  box-shadow: 7px 7px 13px #181818, -7px -7px 13px #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.cc img {
+  width: 10rem;
+}
+.cc-details.first {
+  margin-top: 1rem;
+}
+
+.cc-details {
+  margin-bottom: 0.5rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.persian-align {
+  text-align: right;
+}

@@ -2,7 +2,6 @@ import React from "react";
 import MoneyFormater from "../../utils/moneyFormater";
 import "./marketstate.styles.css";
 export const MarketState = ({ marketState }) => {
-  console.log(marketState);
   const { numberOfCurrencies, totalMarketCap, totalVol24H, bitcoinDominance } =
     marketState || {};
   return (
