@@ -1,4 +1,6 @@
 # Crypto App 👛
+<div align="center"><img src="https://api.netlify.com/api/v1/badges/05f87fef-252e-4404-b5d9-9a2cbbf08e1c/deploy-status"></div>
+
 ![image info](./screenshots/preview.jpg)
 
 This web application created in react with purpose of practicing while learning
