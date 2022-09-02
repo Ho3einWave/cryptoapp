@@ -1,6 +1,6 @@
 import React from "react";
 import "./homepage.styles.css";
-import { CryptoCard } from "../../components/crypto-card/crypto-card.component";
+import CryptoCard from "../../components/crypto-card/crypto-card.component";
 import { MarketState } from "../../components/marketstate/marketstate.component";
 
 export const HomePage = ({ marketState, filteredData, handleChange }) => (

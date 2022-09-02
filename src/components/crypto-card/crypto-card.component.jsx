@@ -1,8 +1,13 @@
 import React from "react";
 import "./crypto-card.styles.css";
-export const CryptoCard = ({ currency }) => {
+import { withRouter } from "react-router-dom";
+
+const CryptoCard = ({ currency, history }) => {
   return (
-    <div className="card">
+    <div
+      className="card"
+      onClick={() => console.log(history.push(`/currency/${currency.id}`))}
+    >
       <div className="details">
         <div className="identifier">
           <img
@@ -35,3 +40,4 @@ export const CryptoCard = ({ currency }) => {
     </div>
   );
 };
+export default withRouter(CryptoCard);
