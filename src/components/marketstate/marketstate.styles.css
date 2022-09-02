@@ -13,3 +13,15 @@
   justify-content: space-between;
   margin: 0.5rem;
 }
+
+@media (min-width: 700px) {
+  .market-state {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .market-state {
+    width: 40rem;
+  }
+}

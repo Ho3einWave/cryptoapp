@@ -1,0 +1,19 @@
+@media (min-width: 700px) {
+  .search {
+    width: 30rem;
+  }
+  .cryto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search {
+    width: 40rem;
+  }
+  .cryto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

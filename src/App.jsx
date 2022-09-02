@@ -1,7 +1,9 @@
 import "./App.css";
+import "./Queries.css";
 import { Component } from "react";
-import { CryptoCard } from "./components/crypto-card/crypto-card.component";
-import { MarketState } from "./components/marketstate/marketstate.component";
+import { HomePage } from "./pages/homepage/homepage.component";
+import { Route } from "react-router-dom";
+
 class App extends Component {
   constructor() {
     super();
@@ -19,7 +21,6 @@ class App extends Component {
     fetch("https://api.hoseinwave.ir/v1/crypto?op=marketState")
       .then((res) => res.json())
       .then((data) => {
-        console.log(this.state.marketState);
         this.setState({ marketState: data.data.data[0] });
       });
   }
@@ -35,20 +36,13 @@ class App extends Component {
     });
     return (
       <div className="App">
-        <h1 className="title">Crypto App</h1>
-        <h4 className="subtitle">Market State</h4>
-        <MarketState marketState={this.state.marketState} />
-        <input
-          className="search"
-          type="search"
-          placeholder="Search Crypto"
-          onChange={this.handleChange}
-        />
-        <h4 className="subtitle">CryptoCurrencies</h4>
-
-        {filteredData?.map((currency) => {
-          return <CryptoCard currency={currency} key={currency.id} />;
-        })}
+        <Route path="/">
+          <HomePage
+            marketState={this.state.marketState}
+            filteredData={filteredData}
+            handleChange={this.handleChange}
+          />
+        </Route>
       </div>
     );
   }
