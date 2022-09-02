@@ -1,6 +1,6 @@
 import "./App.css";
-import "./Queries.css";
 import { Component } from "react";
+import { NavBar } from "./components/nav-bar/nav-bar.component";
 import { HomePage } from "./pages/homepage/homepage.component";
 import { Route } from "react-router-dom";
 
@@ -36,7 +36,8 @@ class App extends Component {
     });
     return (
       <div className="App">
-        <Route path="/">
+        <NavBar />
+        <Route exact path="/">
           <HomePage
             marketState={this.state.marketState}
             filteredData={filteredData}
